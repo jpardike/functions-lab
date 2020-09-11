@@ -45,3 +45,43 @@ function calculate(num1, num2, str) {
 
 console.log(calculate(2, 2, 'exp'));
 
+// 4. pandigital numbers
+// Note: The following question is weird, we know. In interviews, you will absolutely be given coding challenges with "weird" questions and you'll need to be very careful when reading these types of questions to make sure you understand what you're being asked to do.
+
+// A number of length n is 1-to-n pandigital if it makes use of all the digits 1 to n exactly once.
+
+// The number 15234 is 1-to-n pandigital because it is 5 numbers long and includes 1, 2, 3, 4, and 5.
+
+// The number 333 is not 1-to-n pandigital.
+
+// The number 0 is not 1-to-n pandigital.
+
+// The number 987654321 is 1-to-n pandigital.
+
+// Write a function that checks if a number is 1-to-n pandigital.
+
+
+
+
+
+// 5. printGreeting v2.0
+// There is a very rudimentary JavaScript function for receiving user input called prompt().
+
+// Usage:
+
+// 	const userInput = prompt("Please enter some input");
+// userInput is now whatever the user entered.
+
+// There is another rudimentary JavaScript function for displaying text called alert(). You probably have heard of it. It takes a string as a parameter. Read about it on mdn.
+
+// Let's revisit printGreeting.
+
+// First get the userInput as above. Then write a function called printGreeting2 with a parameter name that returns a greeting with the argument interpolated into the greeting as before, but this time use the alert function to display the greeting to the user.
+
+
+
+function secondGreeting(input) {
+    alert(input);
+}
+
+secondGreeting(prompt('Please enter some input'));

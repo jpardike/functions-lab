@@ -59,11 +59,54 @@ console.log(calculate(2, 2, 'exp'));
 // The number 987654321 is 1-to-n pandigital.
 
 // Write a function that checks if a number is 1-to-n pandigital.
+// console.log(typeof(str));
+//     console.log(str);
+// for (let i = 0; i < arr.length; i++) {
 
 
+function pandigital(num) {
+    let str = num.toString().split('');
+    let arr = Array.from(str);
+    for (let i = 0; i < arr.length; i++) {
+        switch (arr[i]) {
+            case '1':
+                arr.splice(i, i + 1);
+                break;
+            case '2':
+                arr.splice(i, i + 1);
+                break;
+            case '3':
+                arr.splice(i, i + 1);
+                break;
+            case '4':
+                arr.splice(i, i + 1);
+                break;
+            case '5':
+                arr.splice(i, i + 1);
+                break;
+            case '6':
+                arr.splice(i, i + 1);
+                break;
+            case '7':
+                arr.splice(i, i + 1);
+                break;
+            case '8':
+                arr.splice(i, i + 1);
+                break;
+            case '9':
+                arr.splice(i, i + 1);
+                break;
+        
+            default:
+                break;
+        }
+        console.log(arr);
+    }
+    
+    
+}
 
-
-
+pandigital(123456789);
 // 5. printGreeting v2.0
 // There is a very rudimentary JavaScript function for receiving user input called prompt().
 
@@ -84,4 +127,4 @@ function secondGreeting(input) {
     alert(input);
 }
 
-secondGreeting(prompt('Please enter some input'));
+// secondGreeting(prompt('Please enter some input'));
